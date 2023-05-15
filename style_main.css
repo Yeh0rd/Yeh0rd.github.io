@@ -1,0 +1,51 @@
+body {
+  background-color: #f2f2f2;
+  font-family: 'Comic Sans MS', cursive;
+  background-image: linear-gradient(45deg, #8360c3, #2ebf91);
+  background-size: 200% 200%;
+  animation: gradient 8s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  animation: appear 1s ease forwards;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  width: 70%;
+  height: 70%;
+  margin: 10px;
+  overflow-y: scroll;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
